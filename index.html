@@ -23,7 +23,7 @@
 
     <!-- Favicons -->
     <link rel="icon" href="./assets/favicons/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assests/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
     <link rel="manifest" href="./site.webmanifest">
@@ -67,9 +67,93 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <a href="#home" class="site-brand" aria-label="Go to homepage">
+                    <!-- <span class="site-brand__mark">MA</span> -->
+                    <img src="./assets/favicons/android-chrome-512x512.png" />
 
-    <main>Hello Test</main>
+                    <span class="site-brand__text">
+                        <span class="site-brand__title">M Ahmad Amin</span>
+                        <span class="site-brand__subtitle">Web Developer • Portfolio</span>
+                    </span>
+                </a>
+
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <ul class="site-nav__list">
+                        <li><a class="site-nav__link is-active" href="#home">Home</a></li>
+                        <li><a class="site-nav__link" href="#about">About</a></li>
+                        <li><a class="site-nav__link" href="#skills">Skills</a></li>
+                        <li><a class="site-nav__link" href="#projects">Projects</a></li>
+                        <li><a class="site-nav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="site-header__actions">
+                    <a href="#contact" class="btn btn-secondary btn-sm">Let’s Talk</a>
+
+                    <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+                        <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Left Content -->
+                    <div class="hero__content fade-up">
+                        <span class="hero__eyebrow">
+                            Available for freelance & collaborations
+                        </span>
+
+                        <h1 class="hero__title">
+                            <span class="hero__title-line">M Ahmad Amin</span>
+                            <span class="hero__title-line text-gradient">Web Developer</span>
+                        </h1>
+
+                        <p class="hero__lead">
+                            I build clean, modern, and user-focused websites with a strong
+                            focus on beautiful interfaces, responsive design, and practical
+                            real-world development.
+                        </p>
+
+                        <div class="hero__actions">
+                            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary btn-lg">Contact Me</a>
+                        </div>
+
+                        <div class="hero__meta">
+                            <span class="hero__meta-item">Frontend Development</span>
+                            <span class="hero__meta-item">Responsive UI</span>
+                            <span class="hero__meta-item">Modern Web Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual -->
+                    <div class="hero__visual fade-in">
+                        <div class="hero__visual-stack">
+                            <div class="hero-panel hero-photo-panel">
+                                <div class="hero-panel__body hero-photo-panel__body">
+                                    <div class="hero-photo">
+                                        <img src="./assets/images/profile/profile-main.png"
+                                            alt="Portrait of M Ahmad Amin" class="hero-photo__image">
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 
