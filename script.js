@@ -98,3 +98,50 @@ if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
         revealObserver.observe(element);
     });
 }
+
+const projectCarousels = document.querySelectorAll("[data-carousel]");
+
+projectCarousels.forEach((carousel) => {
+    const track = carousel.querySelector(".project-carousel__track");
+    const slides = Array.from(carousel.querySelectorAll(".project-carousel__slide"));
+    const dots = Array.from(carousel.querySelectorAll("[data-carousel-dot]"));
+    const prevButton = carousel.querySelector("[data-carousel-prev]");
+    const nextButton = carousel.querySelector("[data-carousel-next]");
+
+    if (!track || slides.length === 0) {
+        return;
+    }
+
+    let currentIndex = 0;
+
+    function renderSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle("is-active", slideIndex === currentIndex);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+            const isActive = dotIndex === currentIndex;
+            dot.classList.toggle("is-active", isActive);
+            dot.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+    }
+
+    prevButton?.addEventListener("click", () => {
+        renderSlide(currentIndex - 1);
+    });
+
+    nextButton?.addEventListener("click", () => {
+        renderSlide(currentIndex + 1);
+    });
+
+    dots.forEach((dot, dotIndex) => {
+        dot.addEventListener("click", () => {
+            renderSlide(dotIndex);
+        });
+    });
+
+    renderSlide(0);
+});

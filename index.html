@@ -456,7 +456,63 @@
                 <div class="projects-grid">
                     <article class="project-card project-card--featured fade-up">
                         <div class="project-card__media">
-                            <img src="./assets/images/projects/CorpSite.jpg" alt="Screenshot of CorpSite CMS project" />
+                            <div class="project-carousel" data-carousel aria-label="CorpSite CMS screenshots">
+                                <div class="project-carousel__viewport">
+                                    <div class="project-carousel__track">
+                                        <figure class="project-carousel__slide is-active">
+                                            <img src="./assets/images/projects/CorpSiteHomePage.jpg"
+                                                alt="CMS homepage screenshot"
+                                                class="project-carousel__image project-carousel__image--overview" />
+                                            <figcaption class="project-carousel__caption">Homepage overview</figcaption>
+                                        </figure>
+
+                                        <figure class="project-carousel__slide">
+                                            <img src="./assets/images/projects/CorpSiteAdminDashboard.jpg"
+                                                alt="CMS Admin Dasboard screenshot"
+                                                class="project-carousel__image project-carousel__image--content" />
+                                            <figcaption class="project-carousel__caption">Admin Dashboard</figcaption>
+                                        </figure>
+
+                                        <figure class="project-carousel__slide">
+                                            <img src="./assets/images/projects/CorpSiteBlogPage.jpg"
+                                                alt="CMS Blog Page screenshot"
+                                                class="project-carousel__image project-carousel__image--admin" />
+                                            <figcaption class="project-carousel__caption">Public Blog Page</figcaption>
+                                        </figure>
+
+                                        <figure class="project-carousel__slide">
+                                            <img src="./assets/images/projects/CorpSiteAdminPosts.jpg"
+                                                alt="CMS Admin Panel Posts screenshot"
+                                                class="project-carousel__image project-carousel__image--responsive" />
+                                            <figcaption class="project-carousel__caption">Posts management</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="project-carousel__controls">
+                                    <button type="button" class="project-carousel__button" data-carousel-prev
+                                        aria-label="Show previous screenshot">
+                                        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                                    </button>
+
+                                    <div class="project-carousel__dots" aria-label="Select screenshot">
+                                        <button type="button" class="project-carousel__dot is-active"
+                                            data-carousel-dot="0" aria-label="Show screenshot 1"
+                                            aria-pressed="true"></button>
+                                        <button type="button" class="project-carousel__dot" data-carousel-dot="1"
+                                            aria-label="Show screenshot 2" aria-pressed="false"></button>
+                                        <button type="button" class="project-carousel__dot" data-carousel-dot="2"
+                                            aria-label="Show screenshot 3" aria-pressed="false"></button>
+                                        <button type="button" class="project-carousel__dot" data-carousel-dot="3"
+                                            aria-label="Show screenshot 4" aria-pressed="false"></button>
+                                    </div>
+
+                                    <button type="button" class="project-carousel__button" data-carousel-next
+                                        aria-label="Show next screenshot">
+                                        <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="project-card__content">
