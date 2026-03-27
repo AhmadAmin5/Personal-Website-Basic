@@ -702,11 +702,16 @@ textarea:focus-visible {
 @media (max-width: 640px) {
     :root {
         --section-padding-y: 72px;
-        --section-padding-x: 20px;
+        --section-padding-x: 12px;
     }
 
     .card__body {
         padding: 22px;
+    }
+
+    .container,
+    .container--narrow {
+        width: min(100% - 1.25rem, var(--container-width));
     }
 
     .btn {
