@@ -34,6 +34,7 @@
     font-size: var(--font-size-sm);
     font-weight: 700;
     box-shadow: var(--shadow-sm);
+    white-space: nowrap;
 }
 
 .hero__title {
@@ -295,19 +296,31 @@
 }
 
 @media (max-width: 640px) {
+    .hero__inner {
+        gap: 18px;
+    }
+
+    .hero__eyebrow {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.78rem;
+        letter-spacing: -0.01em;
+    }
 
     .hero-panel.hero-photo-panel,
     .hero-photo {
-        min-height: 360px;
+        min-height: auto;
     }
 
     .hero-photo__image {
-        max-width: 94%;
-        max-height: 420px;
+        width: min(88vw, 320px);
+        height: auto;
+        max-width: 100%;
+        max-height: none;
     }
 
     .hero-photo::before {
-        bottom: 34px;
-        width: min(84%, 320px);
+        bottom: 12px;
+        width: min(78%, 280px);
     }
 }

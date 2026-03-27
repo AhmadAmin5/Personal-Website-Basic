@@ -85,6 +85,9 @@
 }
 
 .project-tech-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 0.6rem 0.95rem;
     border-radius: 999px;
     background: color-mix(in srgb, var(--color-surface-2) 88%, transparent);
@@ -94,24 +97,65 @@
     font-weight: 500;
 }
 
+.project-tech-list__icon {
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.project-tech-list__icon--node {
+    color: #539e43;
+}
+
+.project-tech-list__icon--react {
+    color: #61dafb;
+}
+
+.project-tech-list__icon--mongodb {
+    color: #47a248;
+}
+
+.project-tech-list__icon--rtk {
+    color: #7c3aed;
+}
+
+.project-tech-list__icon--jwt {
+    color: #f59e0b;
+}
+
+.project-tech-list__icon--express {
+    color: var(--color-heading);
+}
+
 .project-card__actions {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.9rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
 }
 
 .project-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.85rem 1.2rem;
-    border-radius: 14px;
+    gap: 0.35rem;
+    padding: 0.68rem 0.8rem;
+    border-radius: 12px;
     border: 1px solid var(--color-border);
     background: color-mix(in srgb, var(--color-surface-2) 86%, var(--color-primary-soft));
     color: var(--color-heading);
     text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.92rem;
     font-weight: 600;
     transition: all 0.25s ease;
+}
+
+.project-btn__icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.project-btn__icon--github {
+    color: #181717;
 }
 
 .project-btn:hover {
@@ -139,6 +183,10 @@
 
     .project-card__media {
         min-height: 280px;
+    }
+
+    .project-card__actions {
+        flex-wrap: wrap;
     }
 }
 

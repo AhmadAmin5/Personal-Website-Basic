@@ -69,6 +69,7 @@
 .about-balanced-tag {
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     padding: 10px 14px;
     border: 1px solid var(--color-border);
     border-radius: 999px;
@@ -76,6 +77,39 @@
     color: var(--color-heading);
     font-weight: 600;
     box-shadow: var(--shadow-sm);
+}
+
+.about-balanced-tag__icon {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.about-balanced-tag__icon--wordpress {
+    color: #21759b;
+}
+
+.about-balanced-tag__icon--react {
+    color: #61dafb;
+}
+
+.about-balanced-tag__icon--next {
+    color: var(--color-heading);
+}
+
+.about-balanced-tag__icon--node {
+    color: #539e43;
+}
+
+.about-balanced-tag__icon--mongodb {
+    color: #47A248;
+}
+
+.about-balanced-tag__icon--javascript {
+    color: #F59E0B;
+}
+
+.about-balanced-tag__icon--mysql {
+    color: #00618A;
 }
 
 .about-balanced-points {

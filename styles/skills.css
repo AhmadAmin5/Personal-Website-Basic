@@ -94,6 +94,7 @@
 .skills-tag {
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     min-height: 42px;
     padding: 10px 14px;
     border: 1px solid var(--color-border);
@@ -102,6 +103,99 @@
     color: var(--color-heading);
     font-weight: 600;
     box-shadow: var(--shadow-sm);
+}
+
+.skills-tag__icon {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.skills-tag__icon--html {
+    color: #e34f26;
+}
+
+.skills-tag__icon--css {
+    color: #1572b6;
+}
+
+.skills-tag__icon--javascript {
+    color: #f59e0b;
+}
+
+.skills-tag__icon--typescript {
+    color: #3178c6;
+}
+
+.skills-tag__icon--react {
+    color: #61dafb;
+}
+
+.skills-tag__icon--next {
+    color: var(--color-heading);
+}
+
+.skills-tag__icon--responsive {
+    color: #0ea5e9;
+}
+
+.skills-tag__icon--node {
+    color: #539e43;
+}
+
+.skills-tag__icon--express {
+    color: var(--color-heading);
+}
+
+.skills-tag__icon--api {
+    color: #2563eb;
+}
+
+.skills-tag__icon--auth {
+    color: #8b5cf6;
+}
+
+.skills-tag__icon--crud {
+    color: #14b8a6;
+}
+
+.skills-tag__icon--wordpress {
+    color: #21759b;
+}
+
+.skills-tag__icon--custom {
+    color: #f97316;
+}
+
+.skills-tag__icon--content {
+    color: #0f766e;
+}
+
+.skills-tag__icon--landing {
+    color: #ec4899;
+}
+
+.skills-tag__icon--business {
+    color: #4f46e5;
+}
+
+.skills-tag__icon--mongodb {
+    color: #47a248;
+}
+
+.skills-tag__icon--mysql {
+    color: #00618a;
+}
+
+.skills-tag__icon--git {
+    color: #f1502f;
+}
+
+.skills-tag__icon--github {
+    color: var(--color-heading);
+}
+
+.skills-tag__icon--problem {
+    color: #eab308;
 }
 
 @media (max-width: 900px) {
