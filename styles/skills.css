@@ -30,14 +30,14 @@
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
-        color-mix(in srgb, var(--color-surface) 94%, white 6%);
+        linear-gradient(180deg, color-mix(in srgb, var(--color-overlay) 12%, transparent), transparent),
+        color-mix(in srgb, var(--color-surface) 86%, var(--color-surface-2) 14%);
     box-shadow: var(--shadow-sm);
     transition:
         transform var(--transition-speed) var(--ease-smooth),
         border-color var(--transition-speed) ease,
         box-shadow var(--transition-speed) ease,
-        background-color var(--transition-speed) ease;
+        background var(--transition-speed) ease;
 }
 
 .skills-card:hover {
@@ -98,7 +98,7 @@
     padding: 10px 14px;
     border: 1px solid var(--color-border);
     border-radius: 999px;
-    background: var(--color-surface);
+    background: color-mix(in srgb, var(--color-surface) 82%, var(--color-surface-2) 18%);
     color: var(--color-heading);
     font-weight: 600;
     box-shadow: var(--shadow-sm);

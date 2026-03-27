@@ -3,6 +3,10 @@
 @import url("./about.css");
 @import url("./footer.css");
 @import url("./skills.css");
+@import url("./projects.css");
+@import url("./education.css");
+@import url("./services.css");
+@import url("contact.css");
 
 :root {
     --color-bg: #F7FBFF;
@@ -237,6 +241,13 @@ h4 {
 
 p {
     color: var(--color-text-muted);
+}
+
+.section-title {
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 4.6vw, 3.7rem);
+    line-height: 1.06;
+    letter-spacing: -0.03em;
 }
 
 .text-gradient {

@@ -231,6 +231,15 @@
     pointer-events: none;
 }
 
+[data-theme="dark"] .hero-photo::before {
+    background:
+        radial-gradient(circle at 50% 35%,
+            color-mix(in srgb, var(--color-primary) 34%, #1e293b 66%) 0%,
+            color-mix(in srgb, var(--color-primary) 18%, transparent) 52%,
+            rgba(37, 99, 235, 0.1) 72%,
+            transparent 100%);
+}
+
 /* Ground shadow under the person */
 .hero-photo::after {
     content: "";

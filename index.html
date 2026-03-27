@@ -162,7 +162,8 @@
             <div class="container">
                 <div class="section-shell__inner">
                     <div class="about-balanced-heading fade-up">
-                        <h2 class="about-balanced-heading__title">About Me</h2>
+                        <span class="section-heading__eyebrow">About me</span>
+                        <h2 class="section-title">Who am I</h2>
                     </div>
 
                     <div class="about-balanced-grid">
@@ -229,6 +230,63 @@
                             </div>
                         </article>
                     </div>
+
+                    <article class="about-balanced-card about-education-card fade-up">
+                        <span class="about-balanced-card__eyebrow">Education</span>
+
+                        <div class="about-education-header">
+                            <div class="about-education-icon" aria-hidden="true">
+                                <i class="ri-building-4-line"></i>
+                            </div>
+
+                            <div>
+                                <h3 class="about-balanced-card__title">University of Engineering &amp; Technology</h3>
+                                <p class="about-balanced-card__text">Lahore, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="about-education-details compact">
+                            <div class="about-education-item">
+                                <div class="about-education-item__icon">
+                                    <i class="ri-graduation-cap-line"></i>
+                                </div>
+                                <div>
+                                    <span class="about-education-label">Degree</span>
+                                    <p class="about-education-value">Bachelor in Computer Science</p>
+                                </div>
+                            </div>
+
+                            <div class="about-education-item">
+                                <div class="about-education-item__icon">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <div>
+                                    <span class="about-education-label">Duration</span>
+                                    <p class="about-education-value">4 years</p>
+                                </div>
+                            </div>
+
+                            <div class="about-education-item">
+                                <div class="about-education-item__icon">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <div>
+                                    <span class="about-education-label">Session</span>
+                                    <p class="about-education-value">2024–2028</p>
+                                </div>
+                            </div>
+
+                            <div class="about-education-item">
+                                <div class="about-education-item__icon">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </div>
+                                <div>
+                                    <span class="about-education-label">Focus</span>
+                                    <p class="about-education-value">Coding, Software Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -237,8 +295,8 @@
             <div class="container">
                 <div class="section-shell__inner">
                     <div class="skills-section__heading fade-up">
-                        <!-- <span class="section-heading__eyebrow">Skills / Tech Stack</span> -->
-                        <h2 class="skills-section__title">My tech stack</h2>
+                        <span class="section-heading__eyebrow">Skills</span>
+                        <h2 class="section-title">My tech stack</h2>
                         <p class="skills-section__text">
                             I work across frontend, backend, CMS-based website building, and databases. My focus is on
                             building websites and web applications that feel clean on the surface and stay
@@ -332,6 +390,276 @@
             </div>
         </section>
 
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-heading projects-heading">
+                    <span class="section-heading__eyebrow">Projects</span>
+                    <h2 class="section-title">Selected work</h2>
+                    <p>
+                        A look at some of the projects I have built, focusing on clean UI,
+                        structured backend systems, and practical real-world functionality.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card project-card--featured">
+                        <div class="project-card__media">
+                            <img src="./assets/images/projects/CorpSite.png" alt="Screenshot of CorpSite CMS project" />
+                        </div>
+
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-card__label">Featured Project</span>
+                                <h3>CorpSite CMS</h3>
+                                <p>
+                                    A full-stack content management system built for modern corporate websites.
+                                    It includes a React-based admin panel, role-based access control for users
+                                    like admin, moderator, and content writer, and a Node.js backend for
+                                    managing content, authentication, and system workflows in a clean and
+                                    scalable way.
+                                </p>
+                            </div>
+
+                            <div class="project-card__meta">
+                                <h4>Tech Stack</h4>
+                                <ul class="project-tech-list">
+                                    <li>Node.js</li>
+                                    <li>React.js</li>
+                                    <li>MongoDB</li>
+                                    <li>RTK Query</li>
+                                    <li>JWT Auth</li>
+                                    <li>Express.js</li>
+                                </ul>
+                            </div>
+                            <h4>Links</h4>
+                            <div class="project-card__actions">
+                                <a href="https://corpsite-teal.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="project-btn project-btn--primary">
+                                    Live Demo
+                                </a>
+
+                                <a href="https://github.com/AhmadAmin5/CorpSite-Frontend" target="_blank"
+                                    rel="noopener noreferrer" class="project-btn">
+                                    Frontend Code
+                                </a>
+
+                                <a href="https://github.com/AhmadAmin5/CorpSite-Backend" target="_blank"
+                                    rel="noopener noreferrer" class="project-btn">
+                                    Backend Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-shell section-alt">
+            <div class="container">
+                <div class="section-shell__inner">
+                    <div class="section-heading fade-up">
+                        <span class="section-heading__eyebrow">Services</span>
+                        <h2 class="section-title">What I offer</h2>
+                        <p class="section-heading__text">
+                            I build modern, practical, and user-friendly websites for businesses, personal brands, and
+                            growing projects — from simple websites to custom full-stack solutions with admin panels.
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-briefcase-4-line"></i>
+                                </div>
+                                <h3 class="card__title">Business Websites</h3>
+                                <p class="card__text">
+                                    Professional websites for businesses, brands, and services that help present your
+                                    company clearly and build trust with clients.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-user-star-line"></i>
+                                </div>
+                                <h3 class="card__title">Personal Portfolio Websites</h3>
+                                <p class="card__text">
+                                    Clean and modern portfolio websites to showcase your skills, projects, experience,
+                                    and personal brand in a professional way.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-wordpress-line"></i>
+                                </div>
+                                <h3 class="card__title">WordPress Website Development</h3>
+                                <p class="card__text">
+                                    WordPress websites that are easy to manage, flexible to update, and suitable for
+                                    business sites, blogs, and service-based websites.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </div>
+                                <h3 class="card__title">Custom Website Development</h3>
+                                <p class="card__text">
+                                    Fully custom websites built according to your goals, design needs, and functionality
+                                    instead of relying on generic templates.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-dashboard-line"></i>
+                                </div>
+                                <h3 class="card__title">Websites with Admin Panel</h3>
+                                <p class="card__text">
+                                    Websites with admin dashboard functionality so you can manage content, users,
+                                    products, or other business data more easily.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card services-card fade-up">
+                            <div class="card__body">
+                                <div class="card__icon" aria-hidden="true">
+                                    <i class="ri-stack-line"></i>
+                                </div>
+                                <h3 class="card__title">Full-Stack Web Development</h3>
+                                <p class="card__text">
+                                    Complete web solutions with frontend and backend development using modern
+                                    technologies
+                                    such as MERN stack for dynamic and scalable websites and web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-shell section-alt">
+            <div class="container">
+                <div class="section-shell__inner">
+                    <div class="section-heading fade-up">
+                        <span class="section-heading__eyebrow">Contact</span>
+                        <h2 class="section-title">Let’s work together</h2>
+                        <p class="section-heading__text">
+                            Have a project, freelance opportunity, or collaboration idea? Feel free to reach out.
+                            You can replace all the dummy details below with your real contact information.
+                        </p>
+                    </div>
+
+                    <div class="contact-simple surface fade-up">
+                        <div class="contact-simple__top">
+                            <div class="contact-simple__intro">
+                                <span class="contact-simple__label">Available for freelance work</span>
+                                <h3 class="contact-simple__title">The easiest way to reach me is by email or WhatsApp
+                                </h3>
+                                <p class="contact-simple__text">
+                                    I usually reply to project inquiries, collaboration messages, and client questions
+                                    through
+                                    these channels first.
+                                </p>
+                            </div>
+
+                            <div class="contact-simple__actions">
+                                <a href="mailto:contact@ahmadamin.net" class="btn btn-primary">
+                                    <i class="ri-mail-line"></i>
+                                    Email Me
+                                </a>
+
+                                <a href="https://wa.me/923008834760" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-secondary">
+                                    <i class="ri-whatsapp-line"></i>
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-simple__divider"></div>
+
+                        <div class="contact-simple__details">
+                            <a href="mailto:contact@ahmadamin.net" class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-mail-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">Email</span>
+                                    <span class="contact-simple__item-value">contact@ahmadamin.net</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+923008834760" class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-phone-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">Phone</span>
+                                    <span class="contact-simple__item-value">+92 300 8834760</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-map-pin-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">Location</span>
+                                    <span class="contact-simple__item-value">Lahore, Pakistan</span>
+                                </div>
+                            </div>
+
+                            <a href="https://linkedin.com/in/AhmadAmin5" target="_blank" rel="noopener noreferrer"
+                                class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">LinkedIn</span>
+                                    <span class="contact-simple__item-value">linkedin.com/in/AhmadAmin5</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/AhmadAmin5" target="_blank" rel="noopener noreferrer"
+                                class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">GitHub</span>
+                                    <span class="contact-simple__item-value">github.com/AhmadAmin5</span>
+                                </div>
+                            </a>
+
+                            <a href="https://instagram.com/AhmadAtInsta" target="_blank" rel="noopener noreferrer"
+                                class="contact-simple__item">
+                                <span class="contact-simple__item-icon" aria-hidden="true">
+                                    <i class="ri-instagram-line"></i>
+                                </span>
+                                <div>
+                                    <span class="contact-simple__item-label">Instagram</span>
+                                    <span class="contact-simple__item-value">@AhmadAtInsta</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -416,6 +744,12 @@
                                 <span class="site-footer__social-icon" aria-hidden="true"><i
                                         class="ri-whatsapp-line"></i></span>
                                 <span>WhatsApp</span>
+                            </a>
+                            <a href="https://x.com/AhmadAtX" class="site-footer__social" aria-label="X" target="_blank"
+                                rel="noopener noreferrer">
+                                <span class="site-footer__social-icon" aria-hidden="true"><i
+                                        class="ri-twitter-x-line"></i></span>
+                                <span>X (Twitter)</span>
                             </a>
                         </div>
                     </div>
