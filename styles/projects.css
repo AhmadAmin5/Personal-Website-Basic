@@ -146,6 +146,7 @@
     white-space: nowrap;
     font-size: 0.92rem;
     font-weight: 600;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
     transition: all 0.25s ease;
 }
 
@@ -162,6 +163,7 @@
     transform: translateY(-2px);
     border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border));
     color: var(--color-primary);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
 }
 
 .project-btn--primary {
