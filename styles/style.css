@@ -607,15 +607,26 @@ p {
 
 /* animnations */
 .fade-up {
-    animation: fadeUp 0.8s var(--ease-smooth) both;
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+        opacity 0.8s var(--ease-smooth),
+        transform 0.8s var(--ease-smooth);
 }
 
 .fade-in {
-    animation: fadeIn 0.8s var(--ease-smooth) both;
+    opacity: 0;
+    transition: opacity 0.8s var(--ease-smooth);
 }
 
 .float-soft {
     animation: floatSoft 4s ease-in-out infinite;
+}
+
+.is-visible.fade-up,
+.is-visible.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes fadeUp {
